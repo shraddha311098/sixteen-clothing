@@ -1,0 +1,311 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sixteen clothing</title>
+        <link rel="stylesheet" href="page1.css">
+        <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+       
+        
+    </head>
+
+    <body style="margin: 0px;">
+        
+
+        <div class="header" id="myHeader">
+            <a href="page1.html" class="logo">Sixteen <span style="color: rgb(243, 63, 63);">Clothing</span></a>
+
+            <div class="header-right">
+              <a class="home" href="page1.html">Home</a>
+              <a class="ourproduct" href="page2.html">Our Products</a>
+              <a href="about.html">About Us</a>
+              <a href="contact.html">Contact Us</a>
+              
+            </div>
+          </div>
+
+          <script>
+            window.onscroll = function() {myFunction()};
+            
+            var header = document.getElementById("myHeader");
+            var sticky = header.offsetTop;
+            
+            function myFunction() {
+              if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+              } else {
+                header.classList.remove("sticky");
+              }
+            }
+            </script>
+
+        <div class="slideimg">
+            <div class="container fade">
+            <img class="img1" src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/slide_01.jpg" alt="img1">
+            <div class="centered">
+                <h4>BEST OFFER</h4>
+                <h2><b>NEW ARRIVAL ON SALE</b> </h2>
+                <div class="text">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+
+        <div class="container fade">
+            <img class="img1" src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/slide_02.jpg" alt="img1">
+            <div class="centered">
+                <h4>FLASH DEALS</h4>
+                <h2><b>GET YOUR BEST PRODUCTS</b> </h2>
+                <div class="text">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+
+        <div class="container fade">
+            <img class="img1" src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/slide_03.jpg" alt="img1">
+            <div class="centered">
+                <h4>LAST MINUTE</h4>
+                <h2><b>GRAB LAST MINUTE DEALS</b> </h2>
+                <div class="text">
+                    <span class="dot" onclick="currentSlide(1)"></span> 
+                    <span class="dot" onclick="currentSlide(2)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+        </div>
+
+        
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
+            
+            function plusSlides(n) {
+              showSlides(slideIndex += n);
+            }
+            
+            function currentSlide(n) {
+              showSlides(slideIndex = n);
+            }
+            
+            function showSlides(n) {
+              var i;
+              var slides = document.getElementsByClassName("container");
+              var dots = document.getElementsByClassName("dot");
+              if (n > slides.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = slides.length}
+              for (i = 0; i < slides.length; i++) {
+                  slides[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                  dots[i].className = dots[i].className.replace(" active", "");
+              }
+              slides[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += " active";
+            }
+            </script>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+
+        <div class="latestproduct">
+        <div class="productcontainer">
+            <div class="row">
+                <div class="col1">
+                    <div class="sechead">
+                        <h2>Latest Products</h2>
+                        <a href="page2.html">view all products ></a>
+                    </div>
+                </div>
+                
+
+                <div class="col4">
+                    <div class="productitem">
+                        <img src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_01.jpg" alt="shoese">
+
+                        <div class="productcontent">
+                            <span style="float: right;">$25.75</span>
+                            <a href="#">
+                                <h4>TIMBERWOOD</h4>
+                            </a>
+                            <p>Lorem ipsume dolor sit amet, adipisicing<br> elite. Itaque, corporis nulla aspernatur.</p>
+                            <div class="stars">
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <span style="color: #F33F3F; float: right;">Reviews(12)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col4">
+                        <div class="productitem">
+                            <img src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_02.jpg" alt="cap">
+    
+                            <div class="productcontent">
+                                <span style="float: right;">$30.25</span>
+                                <a href="#">
+                                    <h4>TIMBERWOOD</h4>
+                                </a>
+                                
+                                <p>Lorem ipsume dolor sit amet, adipisicing<br> elite. Itaque, corporis nulla aspernatur.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <span style="color: #F33F3F; float: right;">Reviews(24)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col4">
+                            <div class="productitem">
+                                <img src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_03.jpg" alt="shoese">
+        
+                                <div class="productcontent">
+                                    <span style="float: right;">$20.45</span>
+                                    <a href="#">
+                                        <h4>TIMBERWOOD</h4>
+                                    </a>
+                                    
+                                    <p>Lorem ipsume dolor sit amet, adipisicing<br> elite. Itaque, corporis nulla aspernatur.</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <span style="color: #F33F3F; float: right;">Reviews(36)</span>
+                                    </div>
+                                </div>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="col4">
+                    <div class="productitem">
+                        <img src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_04.jpg" alt="shoese">
+
+                        <div class="productcontent">
+                            <span style="float: right;">$25.75</span>
+                            <a href="#">
+                                <h4>TIMBERWOOD</h4>
+                            </a>
+                            <p>Lorem ipsume dolor sit amet, adipisicing<br> elite. Itaque, corporis nulla aspernatur.</p>
+                            <div class="stars">
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                <span style="color: #F33F3F; float: right;">Reviews(12)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col4">
+                        <div class="productitem">
+                            <img src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_05.jpg" alt="cap">
+    
+                            <div class="productcontent">
+                                <span style="float: right;">$30.25</span>
+                                <a href="#">
+                                    <h4>TIMBERWOOD</h4>
+                                </a>
+                                
+                                <p>Lorem ipsume dolor sit amet, adipisicing<br> elite. Itaque, corporis nulla aspernatur.</p>
+                                <div class="stars">
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                    <span style="color: #F33F3F; float: right;">Reviews(24)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col4">
+                            <div class="productitem">
+                                <img src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/product_06.jpg">
+        
+                                <div class="productcontent">
+                                    <span style="float: right;">$20.45</span>
+                                    <a href="#">
+                                        <h4>TIMBERWOOD</h4>
+                                    </a>
+                                    
+                                    <p>Lorem ipsume dolor sit amet, adipisicing<br> elite. Itaque, corporis nulla aspernatur.</p>
+                                    <div class="stars">
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <i class="fas fa-star" style="font-size: 10px; color: #F33F3F;"></i>
+                                        <span style="color: #F33F3F; float: right;">Reviews(36)</span>
+                                    </div>
+                                </div>
+                            </div>                         
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div class="grid1">
+                    <h2>About Sixteen Clothing</h2>
+                    <hr style="color: #f3eded;">
+                    <div class="gridcontent">
+                        <div class="column">
+                          <h4>Looking for the best products?</h4>
+                          <p>oking for the best products?
+                            This template is free to use for your business websites. However, you have no permission to redistribute the downloadable ZIP file on any template collection website.
+                             Contact us for more info.                         
+                            </p>
+                            <ul class="list1">
+                                <li><a href="#">Lorem ipsum dolor sit amet</a></li>
+                                <li><a href="#">Consectetur an adipisicing elit</a></li>
+                                <li><a href="#">It aquecorporis nulla aspernatur</a></li>
+                                <li><a href="#">Corporis, omnis doloremque</a></li>
+                                <li><a href="#">Non cum id reprehenderit</a></li>
+                              </ul>
+                              <a href="Aboutus.html" class="filled-button">Read More</a>
+                        </div>
+                            <div class="column">
+                                <img src="https://templatemo.com/templates/templatemo_546_sixteen_clothing/assets/images/feature-image.jpg" alt="mobile">
+                            </div>
+                        </div>
+                                         
+                    
+                    
+                    <br><br>
+                    <br><br>
+                    <hr style="color: #f7f7f7;">
+
+                    <div class="purchase">
+                        <a href="page2.html" class="filled-button">Purchase Now</a>
+                        <h4>Creative & Unique Sixteen Products</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque corporis amet elite author nulla.</p>
+                    </div>
+                    
+
+    <hr style="color: #f3eded;">
+    <div class="footer">
+        <p>COPYRIGHT © 2020 SIXTEEN CLOTHING CO., LTD. - DESIGN: <a href="https://templatemo.com" target="_blank">TEMPLATEMO</a></p>
+    </div>     
+                             
+                            
+    </body>
+</html>

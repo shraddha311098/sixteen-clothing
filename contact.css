@@ -1,0 +1,347 @@
+*{
+    margin: 0;
+    padding:0;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: fixed;
+    top:0;
+    z-index: 4;
+    left:0%;
+    right:0%;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+    color: white;
+  }
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: x-large;
+    margin-right: 20px;
+  }
+#iconbar{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    opacity: 0;
+    visibility: hidden;
+}
+ #iconbar:hover{
+    color: tomato;
+}
+h1{
+    float: left;
+    color: tomato;
+    margin-left: 20px;
+    margin-top:12px;
+}
+li a:hover {
+    background-color: red;
+}
+#logo1:hover {
+    background-color: red;
+}
+#logo2:hover {
+    background-color: red;
+}
+#logo3:hover {
+    background-color: red;
+}
+#logo4:hover {
+    background-color: red;
+}
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    background-image: url("/home/cedcoss/Desktop/task/template1/contact1.jpg");
+    opacity: 2.0;
+    clear: both;
+    background-size: cover;
+    text-align: center;
+    background-repeat: no-repeat;
+    height: 65vh;
+    color:white;
+    margin-top:85px;
+}
+#para1{
+    color:red;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+#para2{
+    color:deepskyblue;
+    text-align: center;
+    font-size: 60px;
+}
+h2{
+    margin-top: 40px;
+    font-size: 40px;
+    margin-left:20px;
+}
+hr{
+    margin-left:20px;
+    margin-right: 20px;
+}
+.image{
+    float: left;
+    position: absolute;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+#gg{
+    width:600px;
+    height:350px;
+}
+.content1 h6{
+     margin-top: 50px;
+     padding-top: 10px;
+     margin-right:100px;	
+     margin-left: 700px;
+     font-size: x-large;
+     color: royalblue;
+    
+}
+#para4{
+    margin-top: 30px;
+     padding-top: 1px;
+     margin-right:50px;	
+     margin-left: 700px;
+     font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#para5{
+    margin-top: 20px;
+    padding-top: 1px;
+    margin-right:50px;	
+    margin-left: 700px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 30px;
+    }
+.content1 hr{
+    margin-left: 700px;
+    margin-right:50px;
+}
+.image1{
+    margin-right:50px;	
+    margin-left: 700px;
+    margin-top: 10px;
+}
+#logo1{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+#logo2{
+    height: 40px;
+    width: 50px;
+}
+#logo3{
+    height: 40px;
+    width: 70px;
+}
+#logo4{
+    height: 40px;
+    width: 40px;
+}
+#heading1{
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+#last{
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      position: relative;
+      height: 450px;
+      margin-top: 50px;
+      }
+#last p{
+    float: right;
+    left: 600px;
+    margin-left: 800px;
+    margin-top: 10px;
+}
+#last form{
+    float: left;
+    position: absolute;
+    top:5px;
+    left: 15px;
+    height: 400px;
+}
+#horizontal{
+    margin-left: 780px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#last button{
+    background-color:red;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    padding: 14px 20px;
+   }
+#last button:hover{
+       background-color: black;
+       color:white;
+   }
+input[type=text]{
+    width: 300%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+    width: 300%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+#p1:hover{
+    color: red;
+}
+#p{
+    color: tomato;
+    font-size:x-large;
+}
+#p1{
+    color: teal;
+}
+#logo5{
+    height: 200px;
+    width: 200px;
+    margin-right: 20px;
+    box-shadow:  0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.logo{
+    margin-left: 130px;
+    margin-top: 60px;
+    margin-bottom: 60px;;
+}
+footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+span{
+    color: red;
+}
+
+/*responsive*/
+
+@media(min-width:1300px){
+
+}
+
+
+@media (max-width:1270px){
+    #logo{
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+   .container{
+       background-color: black;
+       grid-template-columns: 1fr;
+       flex-direction: column;
+       margin-bottom: -20px;
+   }
+   .navbar1 ul{
+       width: 100%;
+       opacity: 0;
+       display: none;
+       flex-direction: column;
+       text-align: center;
+   }
+   #iconbar{
+       opacity:1;
+       visibility: visible;
+   }
+   .navbar1.responsive{
+       width: 100%!important;
+       height: 40vh!important;
+       position: relative;
+       background-color: black;
+       padding-top: 20px;
+   }
+   .navbar1.responsive ul{
+       opacity: 1;
+       display: block;
+       grid-template-columns: 1fr;
+   }
+   .navbar1.responsive li a{
+       display: block;
+       float:none;
+   }
+   .logo{
+       margin-left: 80px;
+   }
+   #gg{
+    width:600px;
+    height:580px;
+   }
+#last form{
+  float: left;
+  position: absolute;
+  top:5px;
+  left: 15px;
+  height: 600px;
+}
+#last button{
+  background-color:red;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+  border: none;
+  padding: 18px 20px;
+ }
+input[type=text]{
+  width: 300%;
+  height:60px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+textarea{
+  width: 300%;
+  height: 130px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#logo5{
+    height: 150px;
+    width: 180px;
+    margin-right: 15px; 
+}
+}
+
+   
+
+
